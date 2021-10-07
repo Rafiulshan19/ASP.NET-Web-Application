@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "Projects";
+}
+
+<h2>Projects</h2>
+
+<table class="table table-bordered" >
+    <tr>
+        <td>Course</td>
+        <td>Project Name</td>
+        <td>Intel</td>
+    </tr>
+    <tr>
+        <td>OOP1</td>
+        <td>Bank management system</td>
+        <td>Java</td>
+    </tr>
+    <tr>
+        <td>OOP2</td>
+        <td>Restaurent Management System</td>
+        <td>C#; .Net Framwork</td>
+    </tr>
+    <tr>
+        <td>Graphics Design</td>
+        <td>Sundarban Forest Scenary</td>
+        <td>C++, Notepad++</td>
+    </tr>
+    <tr>
+        <td>Web Technology</td>
+        <td>Agriculture management system</td>
+        <td>Html, Database, Php,JS, Ajax, CSS</td>
+    </tr>
+</table>
+
+<h3>Extra Projects</h3>
+
+<table>
+    @foreach (string n in ViewBag.Names)
+    {
+        <tr>
+            <td>@n</td>
+        </tr>
+    }
+</table>
+
