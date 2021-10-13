@@ -26,7 +26,7 @@ namespace Task1.Models.Tables
         }
         public Product GetId(int id)
         {
-            string query = "select *  from Products where ProductId =" + id;
+            string query = "select *  from Products where ProductId = " + id;
             SqlCommand cmd = new SqlCommand(query, connection);
             connection.Open();
             SqlDataReader reader = cmd.ExecuteReader();
@@ -69,7 +69,7 @@ namespace Task1.Models.Tables
             return products;
         }
 
-        public void Delete(int id)
+        public void delete(int id)
         {
             string query = "Delete from Products where ProductId=" + id;
             SqlCommand cmd = new SqlCommand(query, connection);
@@ -77,7 +77,7 @@ namespace Task1.Models.Tables
             cmd.ExecuteNonQuery();
             connection.Close();
         }
-        public void Update(Product p, int id)
+        public void update(Product p, int id)
         {
             string query = "update Products set ProductName='" + p.ProductName + "', Price='" + p.Price + "',Quantity='" + p.Quantity + "' where ProductId=" + id;
             SqlCommand cmd = new SqlCommand(query, connection);

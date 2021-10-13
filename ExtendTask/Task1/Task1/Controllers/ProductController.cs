@@ -12,13 +12,13 @@ namespace Task1.Controllers
 {
     public class ProductController : Controller
     {
-        private object products;
+        //private object products;
         // GET: Product
         public ActionResult Index()
         {
             Database db = new Database();
             var products = db.Products.GetAll();
-            return View(products);
+            return View(products);//
         }
         [HttpGet]
         public ActionResult Create()
@@ -51,7 +51,7 @@ namespace Task1.Controllers
             if (ModelState.IsValid)
             {
                 Database db = new Database();
-                db.Products.Update(p, id);
+                db.Products.update(p, id);
                 return RedirectToAction("Index");
             }
 
@@ -61,11 +61,11 @@ namespace Task1.Controllers
         public ActionResult Delete(int id)
         {
             Database db = new Database();
-            db.Products.Delete(id);
+            db.Products.delete(id);
             return RedirectToAction("Index");
         }
 
-        public ActionResult ViewDetails(int id)
+        public ActionResult ViewInfo(int id)
         {
             Database db = new Database();
             var p = db.Products.GetId(id);

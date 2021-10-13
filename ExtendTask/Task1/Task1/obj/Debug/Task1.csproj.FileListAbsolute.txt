@@ -1,0 +1,2 @@
+F:\Fall 20-21\Advance .NET\A\ASP.NET-Web-Application\ExtendTask\Task1\Task1\obj\Debug\Task1.csproj.AssemblyReference.cache
+F:\Fall 20-21\Advance .NET\A\ASP.NET-Web-Application\ExtendTask\Task1\Task1\obj\Debug\Task1.csproj.CoreCompileInputs.cache
