@@ -1,0 +1,27 @@
+﻿@model List<Task1.Models.Entity.Product>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<a herf="/product/create" class="btn btn-primary">Add Product</a>
+<table>
+    <tr>
+        <th>ProductId</th>
+        <th>ProductName</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Description</th>
+    </tr>
+    @foreach (var p in Model)
+    {
+        <tr>
+            <td>@p.ProductId</td>
+            <td>@p.ProductName</td>
+            <td>@p.Price</td>
+            <td>@p.Quantity</td>
+            <td>@p.Description</td>
+        </tr>
+    }
+</table>
