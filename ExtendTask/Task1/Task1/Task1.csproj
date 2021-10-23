@@ -126,7 +126,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Database.cs" />
+    <Compile Include="Models\Entity\Order.cs" />
     <Compile Include="Models\Entity\Product.cs" />
+    <Compile Include="Models\Tables\Orders.cs" />
     <Compile Include="Models\Tables\Products.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -168,9 +170,8 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Product\Create.cshtml" />
     <Content Include="Views\Product\Index.cshtml" />
-    <Content Include="Views\Product\Delete.cshtml" />
-    <Content Include="Views\Product\Update.cshtml" />
     <Content Include="Views\Product\ViewInfo.cshtml" />
+    <Content Include="Views\Product\Update.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

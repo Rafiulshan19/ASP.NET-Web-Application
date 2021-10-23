@@ -50,7 +50,7 @@ namespace Task1.Models.Tables
             SqlCommand cmd = new SqlCommand(query, connection);
             connection.Open();
             SqlDataReader reader = cmd.ExecuteReader();
-            List<Product> students = new List<Product>();
+            List<Product> products = new List<Product>();
             while (reader.Read())
             {
                 Product p = new Product()

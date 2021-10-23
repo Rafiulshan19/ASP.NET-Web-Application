@@ -15,7 +15,7 @@ namespace Task1.Models
             string connString = @"Data Source=SHAN\SQLEXPRESS;Initial Catalog=ASP;Integrated Security=True";
             SqlConnection connection = new SqlConnection(connString);
             Products = new Products(connection);
-
+            Orders = new Orders(connection);
         }
     }
 }
