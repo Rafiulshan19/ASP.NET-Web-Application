@@ -1,0 +1,20 @@
+﻿@model Task1.Models.Entity.Product
+
+@{
+    ViewBag.Title = "Update";
+}
+
+<h2>Update</h2>
+
+<form action="/Product/Update?id=@Model.ProductId" method="post">
+
+    Product Name : <input type="text" name="ProductName" class="form-control" value="@Model.ProductName" />
+
+    Price: <input type="number" name="Price" class="form-control" value="@Model.Price" />
+
+    Quantity:<input type="number" name="Quantity" class="form-control" value="@Model.Quantity" />
+
+    Description: <input type="text" name="Description" class="form-control" value="@Model.Description" />
+
+    <input type="submit" value="Update" class="btn btn-info" />
+</form>
