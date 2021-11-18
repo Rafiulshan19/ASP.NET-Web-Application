@@ -53,6 +53,8 @@
     <Compile Include="Category.cs">
       <DependentUpon>NEWS.tt</DependentUpon>
     </Compile>
+    <Compile Include="DataAccessFactory.cs" />
+    <Compile Include="IRepository.cs" />
     <Compile Include="NEWS1.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

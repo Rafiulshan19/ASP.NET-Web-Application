@@ -6,36 +6,38 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    public class NewsRepo
+    public class NewsRepo : IRepository<News, int>
     {
-        static NEWS2Entities db;
-        static NewsRepo()
+        NEWS2Entities db;
+        public NewsRepo(NEWS2Entities db)
         {
-            db = new NEWS2Entities();
+            this.db = db;
         }
-        
-        public static void Add(News s)
+        public void Add(News e)
         {
-            db.News.Add(s);
+            db.News.Add(e);
             db.SaveChanges();
         }
-        public static void Edit(int id)
+        public void Delete(int id)
         {
-            var ds =db.News.FirstOrDefault(e => e.Id == id);
-            db.Entry(ds).CurrentValues.SetValues(id);
+            var e = db.News.FirstOrDefault(en => en.Id == id);
+            db.News.Remove(e);
             db.SaveChanges();
         }
-        public static void Delete(int id)
+
+        public void Edit(News e)
         {
-            var ds = db.News.FirstOrDefault(e => e.Id == id);
-            db.News.Remove(ds);
+            var d = db.News.FirstOrDefault(en => en.Id == e.Id);
+            db.Entry(d).CurrentValues.SetValues(e);
             db.SaveChanges();
         }
-        public static List<News> Get()
+
+        public List<News> Get()
         {
             return db.News.ToList();
         }
-        public static News Get(int id)
+
+        public News Get(int id)
         {
             return db.News.FirstOrDefault(e => e.Id == id);
         }

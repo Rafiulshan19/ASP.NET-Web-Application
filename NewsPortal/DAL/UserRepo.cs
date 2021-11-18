@@ -6,38 +6,42 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    public class UserRepo
+    public class UserRepo : IRepository<User, int>
     {
-        static NEWS2Entities db;
-        static UserRepo()
+        NEWS2Entities db;
+        public UserRepo(NEWS2Entities db)
         {
-            db = new NEWS2Entities();
+            this.db = db;
+        }
+        public void Add(User e)
+        {
+            db.Users.Add(e);
+            db.SaveChanges();
         }
 
-        public static void Add(User s)
+        public void Delete(int id)
         {
-            db.Users.Add(s);
+            var e = db.Users.FirstOrDefault(en => en.UId == id);
+            db.Users.Remove(e);
             db.SaveChanges();
         }
-        public static void Edit(int id)
+
+        public void Edit(User e)
         {
-            var ds = db.Users.FirstOrDefault(e => e.UId == id);
-            db.Entry(ds).CurrentValues.SetValues(id);
+            var d = db.Users.FirstOrDefault(en => en.UId == e.UId);
+            db.Entry(d).CurrentValues.SetValues(e);
             db.SaveChanges();
         }
-        public static void Delete(int id)
-        {
-            var ds = db.Users.FirstOrDefault(e => e.UId == id);
-            db.Users.Remove(ds);
-            db.SaveChanges();
-        }
-        public static List<User> Get()
+
+        public List<User> Get()
         {
             return db.Users.ToList();
         }
-        public static User Get(int id)
+
+        public User Get(int id)
         {
             return db.Users.FirstOrDefault(e => e.UId == id);
         }
     }
 }
+

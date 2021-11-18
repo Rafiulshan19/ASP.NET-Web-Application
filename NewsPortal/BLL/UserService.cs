@@ -19,12 +19,13 @@ namespace BLL
             }
             );
             var mapper = new Mapper(config);
-            var data = mapper.Map<List<UserModel>>(UserRepo.Get());
+            var da = DataAccessFactory.NewsDataAcees();
+            var data = mapper.Map<List<UserModel>>(da.Get());
             return data;
         }
         public static List<string> GetUsername()
         {
-            var data = UserRepo.Get().Select(e => e.Username).ToList();
+            var data = DataAccessFactory.UserDataAccess().Get().Select(e => e.Username).ToList();
             return data;
         }
         
@@ -37,7 +38,7 @@ namespace BLL
             );
             var mapper = new Mapper(config);
             var data = mapper.Map<User>(s);
-            UserRepo.Add(data);
+            DataAccessFactory.UserDataAccess().Add(data);
         }
     }
 }

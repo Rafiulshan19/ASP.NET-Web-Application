@@ -20,12 +20,13 @@ namespace BLL
               }
             );
             var mapper = new Mapper(config);
-            var data = mapper.Map<List<NewsModel>>(NewsRepo.Get());
+            var da = DataAccessFactory.NewsDataAcees();
+            var data = mapper.Map<List<NewsModel>>(da.Get());
             return data;
         }
         public static List<string> GetTitles()
         {
-            var data = NewsRepo.Get().Select(e => e.Title).ToList();
+            var data = DataAccessFactory.NewsDataAcees().Get().Select(e => e.Title).ToList();
             return data;
         }
         /*
@@ -43,7 +44,7 @@ namespace BLL
             );
             var mapper = new Mapper(config);
             var data = mapper.Map<News>(s);
-            NewsRepo.Add(data);
+            DataAccessFactory.NewsDataAcees().Add(data);
         }
     }
 }
