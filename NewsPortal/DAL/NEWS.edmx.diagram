@@ -9,7 +9,7 @@
         <EntityTypeShape EntityType="NEWS2Model.Comment" Width="1.5" PointX="8.75" PointY="2.25" IsExpanded="true" />
         <EntityTypeShape EntityType="NEWS2Model.News" Width="1.5" PointX="3" PointY="0.5" IsExpanded="true" />
         <EntityTypeShape EntityType="NEWS2Model.React" Width="1.5" PointX="7.125" PointY="0.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="NEWS2Model.User" Width="1.5" PointX="5" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NEWS2Model.User" Width="1.5" PointX="5.375" PointY="1.625" IsExpanded="true" />
         <AssociationConnector Association="NEWS2Model.FK_News_Categories1" ManuallyRouted="false" />
         <AssociationConnector Association="NEWS2Model.FK_News_Comments" ManuallyRouted="false" />
         <AssociationConnector Association="NEWS2Model.FK_News_Reacts" ManuallyRouted="false" />

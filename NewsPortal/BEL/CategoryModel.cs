@@ -1,13 +1,12 @@
-﻿using DAL;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BLL.BEnt
+namespace BEL
 {
-    class CategoryModel
+    public class CategoryModel
     {
         public int CId { get; set; }
         public string Cname { get; set; }

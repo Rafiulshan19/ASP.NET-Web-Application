@@ -82,6 +82,7 @@
     <Compile Include="User.cs">
       <DependentUpon>NEWS.tt</DependentUpon>
     </Compile>
+    <Compile Include="UserRepo.cs" />
   </ItemGroup>
   <ItemGroup>
     <EntityDeploy Include="NEWS.edmx">
@@ -110,6 +111,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BEL\BEL.csproj">
+      <Project>{245a2a8e-28c1-40b2-b722-82d34d383cf6}</Project>
+      <Name>BEL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

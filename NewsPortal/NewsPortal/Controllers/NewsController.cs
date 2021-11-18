@@ -1,5 +1,5 @@
-﻿using BLL;
-using BLL.BEnt;
+﻿using BEL;
+using BLL;
 using System;
 using System.Collections.Generic;
 using System.Linq;

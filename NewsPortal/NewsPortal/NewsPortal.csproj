@@ -86,6 +86,7 @@
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\NewsController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -105,6 +106,10 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BEL\BEL.csproj">
+      <Project>{245a2a8e-28c1-40b2-b722-82d34d383cf6}</Project>
+      <Name>BEL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BLL\BLL.csproj">
       <Project>{db75a5fc-bf85-4d09-b15b-679ff3fe137d}</Project>
       <Name>BLL</Name>

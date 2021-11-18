@@ -1,0 +1,2 @@
+F:\Fall 20-21\Advance .NET\A\ASP.NET-Web-Application\NewsPortal\BEL\obj\Debug\BEL.csproj.AssemblyReference.cache
+F:\Fall 20-21\Advance .NET\A\ASP.NET-Web-Application\NewsPortal\BEL\obj\Debug\BEL.csproj.CoreCompileInputs.cache
