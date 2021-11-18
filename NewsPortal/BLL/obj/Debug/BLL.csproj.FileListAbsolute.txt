@@ -1,0 +1,14 @@
+F:\Fall 20-21\Advance .NET\A\NewsPortal\BLL\bin\Debug\BLL.dll
+F:\Fall 20-21\Advance .NET\A\NewsPortal\BLL\bin\Debug\BLL.pdb
+F:\Fall 20-21\Advance .NET\A\NewsPortal\BLL\bin\Debug\AutoMapper.dll
+F:\Fall 20-21\Advance .NET\A\NewsPortal\BLL\bin\Debug\DAL.dll
+F:\Fall 20-21\Advance .NET\A\NewsPortal\BLL\bin\Debug\EntityFramework.dll
+F:\Fall 20-21\Advance .NET\A\NewsPortal\BLL\bin\Debug\DAL.pdb
+F:\Fall 20-21\Advance .NET\A\NewsPortal\BLL\bin\Debug\DAL.dll.config
+F:\Fall 20-21\Advance .NET\A\NewsPortal\BLL\bin\Debug\AutoMapper.xml
+F:\Fall 20-21\Advance .NET\A\NewsPortal\BLL\bin\Debug\EntityFramework.xml
+F:\Fall 20-21\Advance .NET\A\NewsPortal\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+F:\Fall 20-21\Advance .NET\A\NewsPortal\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+F:\Fall 20-21\Advance .NET\A\NewsPortal\BLL\obj\Debug\BLL.csproj.CopyComplete
+F:\Fall 20-21\Advance .NET\A\NewsPortal\BLL\obj\Debug\BLL.dll
+F:\Fall 20-21\Advance .NET\A\NewsPortal\BLL\obj\Debug\BLL.pdb

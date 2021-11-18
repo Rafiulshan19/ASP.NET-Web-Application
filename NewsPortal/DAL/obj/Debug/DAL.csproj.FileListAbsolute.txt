@@ -1,0 +1,12 @@
+F:\Fall 20-21\Advance .NET\A\NewsPortal\DAL\bin\Debug\DAL.dll.config
+F:\Fall 20-21\Advance .NET\A\NewsPortal\DAL\bin\Debug\DAL.dll
+F:\Fall 20-21\Advance .NET\A\NewsPortal\DAL\bin\Debug\DAL.pdb
+F:\Fall 20-21\Advance .NET\A\NewsPortal\DAL\bin\Debug\EntityFramework.dll
+F:\Fall 20-21\Advance .NET\A\NewsPortal\DAL\bin\Debug\EntityFramework.SqlServer.dll
+F:\Fall 20-21\Advance .NET\A\NewsPortal\DAL\bin\Debug\EntityFramework.xml
+F:\Fall 20-21\Advance .NET\A\NewsPortal\DAL\bin\Debug\EntityFramework.SqlServer.xml
+F:\Fall 20-21\Advance .NET\A\NewsPortal\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+F:\Fall 20-21\Advance .NET\A\NewsPortal\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+F:\Fall 20-21\Advance .NET\A\NewsPortal\DAL\obj\Debug\DAL.csproj.CopyComplete
+F:\Fall 20-21\Advance .NET\A\NewsPortal\DAL\obj\Debug\DAL.dll
+F:\Fall 20-21\Advance .NET\A\NewsPortal\DAL\obj\Debug\DAL.pdb
